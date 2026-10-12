@@ -1,0 +1,94 @@
+.ex-name {
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    margin: 10px;
+}
+
+.img1 {
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: top;
+    width: 200px;
+    height: 150px;
+}
+
+.img2 {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.img3 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.searchbar1 {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+.searchbar2 {
+    width: 300px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.email-text {
+    margin-bottom: 5px;
+}
+
+.searchbar3 {
+    width: 320px;
+}
+
+.policy-text {
+    font-size: 12px;
+    width: 340px;
+}
+
+.join-button {
+    width: 340px;
+    border: none;
+    color: white;
+    background-color: rgb(0, 90, 210);
+    padding: 10px 0;
+    border-radius: 50px;
+}
+
+.nami-pfp {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.status {
+    vertical-align: middle;
+    border: none;
+    font-size: 18px;
+}
+
+.tweet-button {
+    margin-left: 100px;
+    background-color: rgb(56, 159, 239);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
