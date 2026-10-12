@@ -1,0 +1,90 @@
+.ex-name {
+    text-align: center;
+}
+
+.a-input-name {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.b-text {
+    width: 250px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.c-google-img {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.c-searchbox {
+    width: 300px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+.d-input-first-name {
+    width: 100px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.d-input-email {
+    display: block;
+    width: 237px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.d-sign-up-button {
+    width: 268px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(0, 132, 255);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.e-request-text {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.e-input {
+    display: block;
+    margin-top: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(128, 128, 128, 0.2);
+    width: 300px;
+}
+
+.e-input::placeholder {
+    opacity: 1;
+    color: black;
+}
+
+.e-request-button {
+    margin-top: 20px;
+    margin-right: 5px;
+    color: white;
+    padding: 10px 12px;
+    border: none;
+    background: black;
+}
+
+.e-schedule-button {
+    padding: 10px 12px;
+    border: none;
+}
