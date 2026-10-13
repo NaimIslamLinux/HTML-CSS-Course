@@ -1,0 +1,48 @@
+.ex-name {
+    text-align: center;
+}
+
+.a-div {
+    width: 50px;
+    height: 50px;
+    background: red;
+}
+
+.b-div {
+    width: 50px;
+    height: 50px;
+    background: green;
+    border-radius: 50%;
+}
+
+.c-div {
+    width: 300px;
+    border: 1px solid black;
+}
+
+.c-text {
+    margin-left: 10px;
+}
+
+.c-button {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.d-div {
+    background: rgb(30, 30, 30);
+    width: 400px;
+    color: white;
+    padding: 5px 15px;
+}
+
+.d-install-youtube-music-text {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.d-youtube-music-description {
+    margin-top: 10px;
+    color: rgb(200, 190, 190);
+}
