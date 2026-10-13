@@ -1,0 +1,94 @@
+.ex-name {
+    text-align: center;
+}
+
+.e-nami-pfp {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.e-status {
+    vertical-align: middle;
+    border: none;
+    font-size: 18px;
+}
+
+.e-tweet-button {
+    margin-left: 100px;
+    background-color: rgb(56, 159, 239);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.e-div {
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+    width: 480px;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.f-div,
+.g-profile-container {
+    width: 150px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    transition: 0.2s ease-in;
+}
+
+.f-div:hover,
+.g-profile-container:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.f-profile-pic,
+.g-profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+    cursor: pointer;
+}
+
+.f-profile-name,
+.g-profile-name {
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    height: 40px;
+}
+
+.f-profile-mutual-friend,
+.g-profile-mutual-friend {
+    margin-top: 0;
+    margin-left: 5px;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+}
+
+.f-add-friend-button,
+.g-add-friend-button {
+    background-color: rgb(24, 119, 242);
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    font-size: 12px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.g-profile-container {
+    display: inline-block;
+    margin: 0 5px;
+}
