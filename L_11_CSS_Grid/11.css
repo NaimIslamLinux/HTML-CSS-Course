@@ -1,0 +1,88 @@
+.ex-name {
+    text-align: center;
+}
+
+.blue-div {
+    background: lightblue;
+}
+
+.pink-div {
+    background: lightpink;
+}
+
+.a-div-container {
+    display: grid;
+    grid-template-columns: 200px 75px;
+}
+
+.b-div-container {
+    display: grid;
+    grid-template-columns: 50px 1fr 75px;
+}
+
+.c-div-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+.d-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.d-profile-container {
+    width: 150px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    transition: 0.2s ease-in;
+}
+
+.d-profile-container:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.d-profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+    cursor: pointer;
+}
+
+.d-profile-name {
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    height: 40px;
+}
+
+.d-profile-mutual-friend {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.d-add-friend-button {
+    background-color: rgb(24, 119, 242);
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    font-size: 12px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.d-mutual-friend-picture {
+    width: 20px;
+    border-radius: 50%;
+}
+
+.d-profile-friend-info {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    margin-left: 5px;
+}
