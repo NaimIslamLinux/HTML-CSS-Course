@@ -10,11 +10,18 @@ body {
 }
 
 .video-preview {
+    transition: 0.2s ease-out;
+    padding: 5px 10px;
+}
 
+.video-preview:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .video-thumbnail {
     width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .video-info {
