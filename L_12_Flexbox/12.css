@@ -1,0 +1,116 @@
+.ex-name {
+    text-align: center;
+}
+
+.a-div1 {
+    width: 200px;
+    background: lightblue;
+}
+
+.a-div2 {
+    width: 75px;
+    background: lightpink;
+}
+
+.a-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.b-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.b-item1 {
+    background: lightblue;
+    width: 50;
+}
+
+.b-item2 {
+    background: lightpink;
+    flex: 1;
+}
+
+.b-item3 {
+    background: lightblue;
+    width: 75px;
+}
+
+.c-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.c-div div {
+    background-color: lightpink;
+}
+
+.d-div {
+    display: flex;
+    border: 1px solid gray;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+
+.d-div div {
+    background: lightpink;
+}
+
+.e-item-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.e-grid-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.e-notification-counter {
+    background: #1B74F4;
+    color: white;
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.f-div {
+    background: rgb(120, 82, 178);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+    align-items: center;
+}
+
+.f-item1 {
+    color: white;
+    font-weight: bold;
+}
+
+.f-item2 {
+    flex: 1;
+    margin: 0 50px;
+    padding: 9px 15px;
+    border-radius: 50px;
+    border: none;
+}
+
+.f-item3 {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
