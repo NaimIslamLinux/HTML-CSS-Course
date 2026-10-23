@@ -1,0 +1,46 @@
+:root {
+    --light-bg-color: rgba(0,0,0,0.05);
+    --deep-bg-color: rgba(0,0,0,0.2);
+    --light-border-color: rgba(0,0,0,0.1);
+    --deep-border-color: rgba(0,0,0,0.5);
+    --light-theme-color: rgba(255,255,255,0.9);
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--light-theme-color);
+    width: 70px;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    bottom: 0;
+    justify-content: start;
+}
+
+.side-items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60px;
+    border-radius: 10px;
+    padding: 10px 0;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.side-items:hover {
+    background: var(--light-bg-color);
+}
+
+.side-icon{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-name {
+    font-size: 10px;
+    margin: 0;
+    margin-top: 10px;
+}
