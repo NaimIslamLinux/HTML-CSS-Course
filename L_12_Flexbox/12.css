@@ -105,6 +105,7 @@
     padding: 9px 15px;
     border-radius: 50px;
     border: none;
+    width: 50px;
 }
 
 .f-item3 {
@@ -113,4 +114,59 @@
     border: 1px solid white;
     padding: 5px 10px;
     border-radius: 2px;
+}
+
+.g-div {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+
+.g-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 10px;
+}
+
+.g-item1 {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50px;
+    cursor: zoom-in;
+}
+
+.g-item2 {
+    flex: 1;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.g-item2 .g-name {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0;
+}
+
+.g-name-info {
+    width: 300px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.g-item3 {
+    padding: 20px 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background: #4793fc;
+    cursor: pointer;
 }
