@@ -1,0 +1,133 @@
+:root {
+    --light-bg-color: rgba(0,0,0,0.05);
+    --deep-bg-color: rgba(0,0,0,0.2);
+    --light-border-color: rgba(0,0,0,0.1);
+    --deep-border-color: rgba(0,0,0,0.5);
+    --light-theme-color: rgba(255,255,255,0.9);
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--light-theme-color);
+    backdrop-filter: blur(50px);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .start {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header .center {
+    flex: 1;
+    margin: 0 50px;
+    margin-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header .end {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.header .yt-icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.header .yt-logo {
+    width: 100px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.search-box {
+    font-size: 18px;
+    flex: 1;
+    width: 0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+}
+
+.search-box:focus {
+    border: 1px solid var(--deep-border-color);
+}
+
+.search-icon {
+    border: 0 solid var(--light-border-color);
+    border-left-width: 2px;
+    padding: 11px 15px;
+    width: 18px;
+    padding-left: 30px;
+    background: var(--light-bg-color);
+    cursor: pointer;
+}
+
+.search-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--light-border-color);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.mic-icon {
+    width: 25px;
+    height: 25px;
+    background-color: var(--light-bg-color);
+    padding: 10px 10px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+.create-video-button {
+    background-color: var(--light-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.notification-icon {
+    width: 25px;
+    height: 25px;
+    padding: 10px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.notification-icon:hover {
+    background-color: var(--deep-bg-color);
+}
+
+
+.header .yt-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
