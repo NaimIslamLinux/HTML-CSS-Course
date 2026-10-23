@@ -17,7 +17,7 @@ function renderVideoGrid() {
                 channelName = channel.name;
                 if(channel.verified) {
                 channelVerificationHtml = `
-                <img class="channel-verified-icon" src="images/icons/verified-icon.png"> 
+                <img class="channel-verified-icon" src="images/icons/circle-check-solid-full.svg"> 
                 `;
                 }
             }
