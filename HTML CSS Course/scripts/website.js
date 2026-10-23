@@ -10,10 +10,16 @@ function renderVideoGrid() {
         
         let channelImg = ``;
         let channelName = ``;
+        let channelVerificationHtml = ``;
         channels.forEach( channel => {
             if(video.channelId === channel.id) {
                 channelImg = channel.image;
                 channelName = channel.name;
+                if(channel.verified) {
+                channelVerificationHtml = `
+                <img class="channel-verified-icon" src="images/icons/verified-icon.png"> 
+                `;
+                }
             }
         })
 
@@ -26,11 +32,13 @@ function renderVideoGrid() {
                 <p class="video-title">${video.title}</p>
                 <div class="video-state">
                 <p class="video-aouth">
-                   ${channelName}
+                   ${channelName} ${channelVerificationHtml}
                 </p>
                 <p class="video-view-and-date">
+                    
                     <span class="view">${video.views}
-                    </span> &middot; <span class="date">${video.uploaded}
+                    </span>
+                    <span class="date">${video.uploaded}
                     </span>
                 </p>
                 </div>
@@ -38,7 +46,6 @@ function renderVideoGrid() {
             </div>
         </div>
         `;
-        console.log(channelImg);
     });
 
     videoGridEl.innerHTML = htmlStructure;
