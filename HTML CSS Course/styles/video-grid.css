@@ -1,8 +1,20 @@
 .video-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 20px;
+}
+
+@media (min-width: 700px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1100px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 .video-preview {
