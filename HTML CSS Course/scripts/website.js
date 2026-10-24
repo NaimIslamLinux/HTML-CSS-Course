@@ -25,10 +25,12 @@ function renderVideoGrid() {
 
         htmlStructure += `
         <div class="video-preview">
+            <div class="video-thumbnail-section">
+            <img class="video-thumbnail" src="${video.thumbnail}">
             <div class="video-timeline">
             ${video.duration}
             </div>
-            <img class="video-thumbnail" src="${video.thumbnail}">
+            </div>
             <div class="video-info">
                 <img class="channel-picture" src="${channelImg}">
             <div class="video-description">
