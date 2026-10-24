@@ -39,6 +39,7 @@
 
 .video-thumbnail {
     width: 100%;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
     object-position: center;
 }
@@ -78,7 +79,7 @@
 .video-state {
     display: flex;
     flex-direction: row;
-    align-items: top;
+    align-items: flex-start;
 }
 
 .channel-verified-icon {
