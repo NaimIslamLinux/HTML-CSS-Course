@@ -28,7 +28,11 @@ function renderVideoGrid() {
         }
 
         htmlStructure += `
-        <div class="video-preview">
+        <div class="video-preview" 
+        style="
+        --video-bg-color: ${video.bgColor};
+        --video-state-color: ${video.stateColor};
+        ">
         <div class="main-content">
       <div class="thumbnail-section">
         <img src="${video.thumbnail}" alt="YouTube Video" class="video-thumbnail">
