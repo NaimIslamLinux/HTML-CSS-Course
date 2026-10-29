@@ -11,45 +11,54 @@ function renderVideoGrid() {
         let channelImg = ``;
         let channelName = ``;
         let channelVerificationHtml = ``;
+        let videoTypeHtml = ``;
         channels.forEach( channel => {
             if(video.channelId === channel.id) {
                 channelImg = channel.image;
                 channelName = channel.name;
                 if(channel.verified) {
                 channelVerificationHtml = `
-                <img class="channel-verified-icon" src="images/icons/circle-check-solid-full.svg"> 
+                <img src="images/icons/circle-check-solid-full.svg" alt="Channel verification icon" class="channel-verified-icon">
                 `;
                 }
             }
         })
+        if(video.type === 'video') {
+            videoTypeHtml = `<img src="images/icons/play-solid-full.svg" alt="Video cetagory icon" class="video-badge-icon">`;
+        }
 
         htmlStructure += `
         <div class="video-preview">
-            <div class="video-thumbnail-section">
-            <img class="video-thumbnail" src="${video.thumbnail}">
-            <div class="video-timeline">
-            ${video.duration}
-            </div>
-            </div>
-            <div class="video-info">
-                <img class="channel-picture" src="${channelImg}">
-            <div class="video-description">
-                <p class="video-title">${video.title}</p>
-                <div class="video-state">
-                <p class="video-aouth">
-                   ${channelName} ${channelVerificationHtml}
-                </p>
-                <p class="video-view-and-date">
-                    
-                    <span class="view">${video.views}
-                    </span>
-                    <span class="date">${video.uploaded}
-                    </span>
-                </p>
-                </div>
-            </div>
-            </div>
+        <div class="main-content">
+      <div class="thumbnail-section">
+        <img src="${video.thumbnail}" alt="YouTube Video" class="video-thumbnail">
+        <p class="video-timestamp">
+          ${video.duration}
+        </p>
+      </div>
+
+      <div class="video-info">
+        <img src="${channelImg}" alt="Channel Picture" class="channel-picture">
+        <div class="video-state">
+          <p class="video-title">
+            ${video.title}
+          </p>
+          <div class="video-metadata">
+            <span class="channel-name">${channelName}</span>
+            ${channelVerificationHtml}
+            ${videoTypeHtml}
+            <span class="video-views">
+              ${video.views}
+            </span>
+            <span class="video-updoad-duration">
+              ${video.uploaded}
+            </span>
+          </div>
         </div>
+        <img src="images/icons/dot-menu-horizontal-solid-full.svg" alt="Video menu icon" class="video-menu-icon">
+      </div>
+      </div>
+      </div>
         `;
     });
 
