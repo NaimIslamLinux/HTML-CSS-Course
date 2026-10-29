@@ -23,10 +23,13 @@
     border-radius: 15px;
     transition: background 0.5s ease-in;
     cursor: pointer;
+}
+
+.main-content {
     position: relative;
 }
 
-.video-preview::after {
+.main-content::after {
     content: "";
     position: absolute;
     top: -15px;
@@ -41,7 +44,7 @@
     transition: background 0.5s ease-in;
 }
 
-.video-preview:hover::after {
+.video-preview:hover .main-content::after {
     background: rgba(255, 0, 0, 0.399);
 }
 
