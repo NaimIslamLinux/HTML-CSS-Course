@@ -28,5 +28,11 @@ export const channels = [
     name: "Shinobi Archive",
     image: "images/channels/shinobi-archive.jpg",
     verified: false
+  },
+  {
+  id: "channel-006",
+  name: "Ed Sheeran",
+  image: "images/channels/ed-sheeran.jpg",
+  verified: true
   }
 ];

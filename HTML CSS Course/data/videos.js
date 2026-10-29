@@ -7,7 +7,10 @@ export const videos = [
     thumbnail: "images/thumbnails/video-001.jpg",
     uploaded: "2 years ago",
     views: "19M views",
-    duration: "6:31:00"
+    duration: "6:31:00",
+    bgColor: "#e8eaf6",
+    stateColor: "#3949ab",
+    type: "video"
   },
   {
     id: "video-002",
@@ -17,7 +20,10 @@ export const videos = [
     thumbnail: "images/thumbnails/video-002.jpg",
     uploaded: "2 years ago",
     views: "9.5M views",
-    duration: "22:15:56"
+    duration: "22:15:56",
+    bgColor: "#fff3cd",
+    stateColor: "#856404",
+    type: "video"
   },
   {
     id: "video-003",
@@ -27,7 +33,10 @@ export const videos = [
     thumbnail: "images/thumbnails/video-003.jpg",
     uploaded: "3 years ago",
     views: "7M views",
-    duration: "3:26:43"
+    duration: "3:26:43",
+    bgColor: "#e0f2f1",
+    stateColor: "#00796b",
+    type: "video"
   },
   {
     id: "video-004",
@@ -37,7 +46,10 @@ export const videos = [
     thumbnail: "images/thumbnails/video-004.jpg",
     uploaded: "6 months ago",
     views: "2K views",
-    duration: "12:45"
+    duration: "12:45",
+    bgColor: "#fbe9e7",
+    stateColor: "#d84315",
+    type: "video"
   },
   {
     id: "video-005",
@@ -47,7 +59,10 @@ export const videos = [
     thumbnail: "images/thumbnails/video-005.jpg",
     uploaded: "1 year ago",
     views: "850K views",
-    duration: "35:20"
+    duration: "35:20",
+    bgColor: "#f3e5f5",
+    stateColor: "#8e24aa",
+    type: "video"
   },
   {
     id: "video-006",
@@ -57,7 +72,10 @@ export const videos = [
     thumbnail: "images/thumbnails/video-006.jpg",
     uploaded: "5 days ago",
     views: "420K views",
-    duration: "24:18"
+    duration: "24:18",
+    bgColor: "#e8f5e9",
+    stateColor: "#2e7d32",
+    type: "video"
   },
   {
     id: "video-007",
@@ -67,7 +85,10 @@ export const videos = [
     thumbnail: "images/thumbnails/video-007.jpg",
     uploaded: "2 weeks ago",
     views: "120K views",
-    duration: "14:32"
+    duration: "14:32",
+    bgColor: "#fce4ec",
+    stateColor: "#c2185b",
+    type: "video"
   },
   {
     id: "video-008",
@@ -77,6 +98,22 @@ export const videos = [
     thumbnail: "images/thumbnails/video-008.jpg",
     uploaded: "1 month ago",
     views: "310K views",
-    duration: "18:42"
+    duration: "18:42",
+    bgColor: "#e1f5fe",
+    stateColor: "#0277bd",
+    type: "video"
+  },
+  {
+  id: "video-009",
+  title: "Ed Sheeran - Perfect",
+  description: "Ed Sheeran's romantic song, Perfect.",
+  channelId: "channel-006",
+  thumbnail: "images/thumbnails/video-009.jpg",
+  uploaded: "8 years ago",
+  views: "4B views",
+  duration: "4:40",
+  bgColor: "#fce4ec",
+  stateColor: "#ad1457",
+  type: "music"
   }
 ];
