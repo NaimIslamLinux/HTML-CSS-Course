@@ -147,5 +147,6 @@
 @media (max-width: 760px) {
     .video-grid {
         grid-template-columns: repeat(1, minmax(420px,1fr));
+        margin-left: 0;
     }
 }

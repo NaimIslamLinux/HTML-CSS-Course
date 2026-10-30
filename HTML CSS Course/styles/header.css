@@ -31,7 +31,7 @@
 
 .header .center {
     flex: 1;
-    margin: 0 50px;
+    margin-right: 50px;
     margin-left: 100px;
     display: flex;
     justify-content: center;
@@ -132,4 +132,21 @@
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
+}
+
+/* for halg window/tab   */
+@media (max-width: 1080px) {
+    
+}
+
+/* for mobile   */
+@media (max-width: 760px) {
+    .center {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .search-box {
+        min-width: 20px;
+    }
 }

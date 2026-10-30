@@ -45,3 +45,15 @@
     margin: 0;
     margin-top: 10px;
 }
+
+/* for mobile   */
+@media (max-width: 760px) {
+    .side-bar {
+        display: none;
+    }
+}
+
+/* for halg window/tab   */
+@media (max-width: 1080px) {
+    
+}
