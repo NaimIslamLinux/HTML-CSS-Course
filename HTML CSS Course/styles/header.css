@@ -142,11 +142,48 @@
 /* for mobile   */
 @media (max-width: 760px) {
     .center {
-        margin-right: 0px;
-        margin-left: 0px;
+        margin: 0;
     }
 
     .search-box {
-        min-width: 20px;
+        display: none;
+    }
+
+    .search-container {
+        flex: none;
+    }
+
+    .search-icon {
+        padding: 10px 10px;
+        position: absolute;
+        right: 10px;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+    }
+
+    .mic-icon {
+      display: none;
+    }
+
+    .notification-icon {
+        display: none;
+    }
+
+    .yt-profile {
+        display: none;
+    }
+
+    .create-video-button {
+        display: none;
+    }
+
+    .end {
+        display: none;
+        position: absolute;
+    }
+
+    .header {
+        justify-content: space-between;
     }
 }
