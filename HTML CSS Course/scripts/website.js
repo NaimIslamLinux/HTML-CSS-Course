@@ -25,6 +25,8 @@ function renderVideoGrid() {
         })
         if(video.type === 'video') {
             videoTypeHtml = `<img src="images/icons/play-solid-full.svg" alt="Video cetagory icon" class="video-badge-icon">`;
+        } else if (video.type === 'music') {
+          videoTypeHtml = `<img src="images/icons/music-solid-full.svg" alt="Video cetagory icon" class="video-badge-icon">`;
         }
 
         htmlStructure += `
