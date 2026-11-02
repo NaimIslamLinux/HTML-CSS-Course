@@ -124,10 +124,14 @@ function loadSearchedVideo() {
   let matchingVideo = [];
 
   const url = new URLSearchParams(window.location.search);
-  let search = url.get('search');
+  let searchParams = url.get('search');
 
-  if(search) {
-    search = search.trim().toLowerCase();
+  if(searchParams === null) {
+    return null;
+  } 
+  const search = searchParams.trim().toLowerCase();
+  if(search === '') {
+    return null
   }
   
   matchingVideo = videos.filter(video => {
@@ -138,10 +142,8 @@ function loadSearchedVideo() {
 };
 
 export function loadVideos() {
-  if(searchedVideos.length>0) {
+  if(searchedVideos !== null) {
     return searchedVideos;
-  } else {
-    console.log(searchedVideos)
-    return videos
   }
+  return videos
 };
