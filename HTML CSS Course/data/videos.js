@@ -121,16 +121,27 @@ const videos = [
 const searchedVideos = loadSearchedVideo();
 
 function loadSearchedVideo() {
+  let matchingVideo = [];
+
   const url = new URLSearchParams(window.location.search);
-  const search = url.get('search').trim().toLowerCase();
+  let search = url.get('search');
+
+  if(search) {
+    search.trim().toLowerCase();
+  }
   
-  return videos.filter(video => {
+  matchingVideo = videos.filter(video => {
   return video.title.toLowerCase().includes(search)
-  })
+  });
+
+  return matchingVideo;
 };
 
 export function loadVideos() {
   if(searchedVideos.length>0) {
     return searchedVideos;
-  } else {return videos}
+  } else {
+    console.log(searchedVideos)
+    return videos
+  }
 };
