@@ -127,7 +127,7 @@ function loadSearchedVideo() {
   let search = url.get('search');
 
   if(search) {
-    search.trim().toLowerCase();
+    search = search.trim().toLowerCase();
   }
   
   matchingVideo = videos.filter(video => {
