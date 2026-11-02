@@ -1,4 +1,4 @@
-export const videos = [
+const videos = [
   {
     id: "video-001",
     title: "HTML & CSS Full Course - Beginner to Pro",
@@ -117,3 +117,20 @@ export const videos = [
   type: "music"
   }
 ];
+
+const searchedVideos = loadSearchedVideo();
+
+function loadSearchedVideo() {
+  const url = new URLSearchParams(window.location.search);
+  const search = url.get('search').trim().toLowerCase();
+  
+  return videos.filter(video => {
+  return video.title.toLowerCase().includes(search)
+  })
+};
+
+export function loadVideos() {
+  if(searchedVideos.length>0) {
+    return searchedVideos;
+  } else {return videos}
+};

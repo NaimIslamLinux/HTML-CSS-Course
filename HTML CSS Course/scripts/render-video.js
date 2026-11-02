@@ -1,12 +1,12 @@
-import { videos } from '../data/videos.js';
+import {  } from '../data/videos.js';
 import { channels } from '../data/channels.js';
 
-export function renderVideoGrid() {
+export function renderVideoGrid(videosData) {
     const videoGridEl = document.querySelector('.js-video-grid');
     
     let htmlStructure = ``;
 
-    videos.forEach( video => {
+    videosData.forEach( video => {
         
         let channelImg = ``;
         let channelName = ``;

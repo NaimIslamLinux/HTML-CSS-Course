@@ -1,4 +1,5 @@
 import { renderVideoGrid } from '../scripts/render-video.js';
+import { loadVideos } from '../data/videos.js';
 
 const searchInputEl = document.querySelector('.js-search-box');
 const searchIconEl = document.querySelector('.js-search-icon');
@@ -8,7 +9,7 @@ searchIconEl.addEventListener('click', (event) => {
 });
 
 function renderWebsite() {
-  renderVideoGrid();
+  renderVideoGrid(loadVideos());
 };
 
 renderWebsite();
