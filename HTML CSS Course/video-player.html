@@ -4,8 +4,6 @@
     <title>YouTube Website</title>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/video-grid.css">
-    <link rel="stylesheet" href="styles/side-bar.css">
   </head>
   <body>
 
@@ -54,26 +52,20 @@
 
     </div>
 
-    <div class="side-bar">
+    <div class="page-grid">
+        <div class="player-section">
+            <div class="video-player">
+                <video width="100%" height="100%" controls poster="images/thumbnails/video-001.jpg">
+                    <source src="video/video.MP4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-details">
 
-      <div class="side-items">
-        <img src="images/icons/house-regular-full.svg" class="side-icon">
-        <p class="icon-name">Home</p>
-      </div>
-      <div class="side-items">
-        <img src="images/icons/youtube-shorts-brands-solid-full.svg" class="side-icon">
-        <p class="icon-name">Shorts</p>
-      </div>
-      <div class="side-items">
-        <img src="images/icons/square-youtube-brands-solid-full.svg"
-        class="side-icon">
-        <p class="icon-name">Subscription</p>
-      </div>
-      <div class="side-items">
-        <img src="images/icons/circle-user-regular-full.svg" class="side-icon">
-        <p class="icon-name">You</p>
-      </div>
+            </div>
+        </div>
+        <div class="other-video-grid-section">
 
+        </div>
     </div>
 
     <script type="module" src="scripts/video-player.js"></script>
