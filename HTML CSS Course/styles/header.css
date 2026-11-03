@@ -134,6 +134,32 @@
     object-position: center;
 }
 
+.icon-label {
+    position: relative;
+    z-index: 4;
+}
+
+.icon-label::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    z-index: 3;
+}
+
+.icon-label:hover::after {
+    opacity: 1;
+}
 /* for halg window/tab   */
 @media (max-width: 1080px) {
     
