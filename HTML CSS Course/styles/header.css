@@ -48,6 +48,7 @@
 }
 
 .active {
+    transition: 0.2s ease;
     background: rgba(0, 0, 0, 0.8);
     color: white;
 }
