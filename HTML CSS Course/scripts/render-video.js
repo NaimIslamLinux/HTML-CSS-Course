@@ -34,7 +34,7 @@ export function renderVideoGrid(videosData) {
         style="
         --video-bg-color: ${video.bgColor};
         --video-state-color: ${video.stateColor};
-        ">
+        " onclick="window.location.href = 'video-player.html?videoId=${video.id}&channelId=${video.channelId}'">
         <div class="main-content">
       <div class="thumbnail-section">
         <img src="${video.thumbnail}" alt="YouTube Video" class="video-thumbnail">

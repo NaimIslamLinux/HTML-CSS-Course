@@ -1,6 +1,10 @@
 import { renderVideoGrid } from './render-video.js';
 import { loadVideos, loadSuggestedVideo } from '../data/videos.js';
 
+document.querySelector('.youtube-home-link').addEventListener('click',() => {
+  window.location.href = 'index.html'
+})
+
 const suggetionButtonEl = document.querySelectorAll('.suggestion-button');
 
 suggetionButtonEl.forEach(button => {
