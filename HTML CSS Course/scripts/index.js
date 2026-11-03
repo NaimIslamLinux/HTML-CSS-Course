@@ -1,4 +1,4 @@
-import { renderVideoGrid } from '../scripts/render-video.js';
+import { renderVideoGrid } from './render-video.js';
 import { loadVideos, loadSuggestedVideo } from '../data/videos.js';
 
 const suggetionButtonEl = document.querySelectorAll('.suggestion-button');
@@ -19,11 +19,11 @@ const searchIconEl = document.querySelector('.js-search-icon');
 
 searchInputEl.addEventListener('keydown', (event) => {
   if(event.key === "Enter") {
-    window.location.href = `website.html?search=${searchInputEl.value}`;
+    window.location.href = `index.html?search=${searchInputEl.value}`;
   }
 })
 searchIconEl.addEventListener('click', (event) => {
-  window.location.href = `website.html?search=${searchInputEl.value}`;
+  window.location.href = `index.html?search=${searchInputEl.value}`;
 });
 
 
