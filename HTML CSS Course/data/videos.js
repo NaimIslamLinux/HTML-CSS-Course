@@ -1,3 +1,5 @@
+import { getActiveCategory } from "../scripts/utils/get-active-category.js";
+
 const videos = [
   {
     id: "video-001",
@@ -10,7 +12,8 @@ const videos = [
     duration: "6:31:00",
     bgColor: "#e8eaf6",
     stateColor: "#3949ab",
-    type: "video"
+    type: "video",
+    category: "Education"
   },
   {
     id: "video-002",
@@ -23,7 +26,8 @@ const videos = [
     duration: "22:15:56",
     bgColor: "#fff3cd",
     stateColor: "#856404",
-    type: "video"
+    type: "video",
+    category: "Education"
   },
   {
     id: "video-003",
@@ -36,7 +40,8 @@ const videos = [
     duration: "3:26:43",
     bgColor: "#e0f2f1",
     stateColor: "#00796b",
-    type: "video"
+    type: "video",
+    category: "Education"
   },
   {
     id: "video-004",
@@ -49,7 +54,8 @@ const videos = [
     duration: "12:45",
     bgColor: "#fbe9e7",
     stateColor: "#d84315",
-    type: "video"
+    type: "video",
+    category: "Tech"
   },
   {
     id: "video-005",
@@ -62,7 +68,8 @@ const videos = [
     duration: "35:20",
     bgColor: "#f3e5f5",
     stateColor: "#8e24aa",
-    type: "video"
+    type: "video",
+    category: "Education"
   },
   {
     id: "video-006",
@@ -75,7 +82,8 @@ const videos = [
     duration: "24:18",
     bgColor: "#e8f5e9",
     stateColor: "#2e7d32",
-    type: "video"
+    type: "video",
+    category: "Gaming"
   },
   {
     id: "video-007",
@@ -88,7 +96,8 @@ const videos = [
     duration: "14:32",
     bgColor: "#fce4ec",
     stateColor: "#c2185b",
-    type: "video"
+    type: "video",
+    category: "Anime"
   },
   {
     id: "video-008",
@@ -101,20 +110,22 @@ const videos = [
     duration: "18:42",
     bgColor: "#e1f5fe",
     stateColor: "#0277bd",
-    type: "video"
+    type: "video",
+    category: "Education"
   },
   {
-  id: "video-009",
-  title: "Ed Sheeran - Perfect",
-  description: "Ed Sheeran's romantic song, Perfect.",
-  channelId: "channel-006",
-  thumbnail: "images/thumbnails/video-009.jpg",
-  uploaded: "8 years ago",
-  views: "4B views",
-  duration: "4:40",
-  bgColor: "#fce4ec",
-  stateColor: "#ad1457",
-  type: "music"
+    id: "video-009",
+    title: "Ed Sheeran - Perfect",
+    description: "Ed Sheeran's romantic song, Perfect.",
+    channelId: "channel-006",
+    thumbnail: "images/thumbnails/video-009.jpg",
+    uploaded: "8 years ago",
+    views: "4B views",
+    duration: "4:40",
+    bgColor: "#fce4ec",
+    stateColor: "#ad1457",
+    type: "music",
+    category: "Music"
   }
 ];
 
@@ -141,9 +152,22 @@ function loadSearchedVideo() {
   return matchingVideo;
 };
 
+export function loadSuggestedVideo(category) {
+  return videos.filter(video => {
+    if(category !== 'All') {
+      return video.category.toLowerCase() === category.toLowerCase()
+    } 
+    return true;
+  })
+};
+
 export function loadVideos() {
   if(searchedVideos !== null) {
     return searchedVideos;
+  } else {
+    return loadSuggestedVideo(getActiveCategory());
   }
   return videos
+
 };
+console.log(loadVideos());
